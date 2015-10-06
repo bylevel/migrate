@@ -5,20 +5,12 @@ import (
 	"fmt"
 	neturl "net/url" // alias to allow `url string` func signature in New
 
-	"github.com/mattes/migrate/driver/bash"
-	"github.com/mattes/migrate/driver/cassandra"
-	"github.com/mattes/migrate/driver/mysql"
 	"github.com/mattes/migrate/driver/postgres"
-	"github.com/mattes/migrate/driver/sqlite3"
 	"github.com/mattes/migrate/file"
 )
 
 var driverMap = map[string]Driver{
-	"postgres":  &postgres.Driver{},
-	"mysql":     &mysql.Driver{},
-	"bash":      &bash.Driver{},
-	"cassandra": &cassandra.Driver{},
-	"sqlite3":   &sqlite3.Driver{},
+	"postgres": &postgres.Driver{},
 }
 
 // Driver is the interface type that needs to implemented by all drivers.
