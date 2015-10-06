@@ -5,8 +5,8 @@ import (
 	"fmt"
 	neturl "net/url" // alias to allow `url string` func signature in New
 
-	"github.com/mattes/migrate/driver/postgres"
-	"github.com/mattes/migrate/file"
+	"github.com/bylevel/migrate/driver/postgres"
+	"github.com/bylevel/migrate/file"
 )
 
 var driverMap = map[string]Driver{

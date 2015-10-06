@@ -5,8 +5,8 @@ import (
 	"database/sql"
 	"errors"
 	"fmt"
-	"github.com/mattes/migrate/file"
-	"github.com/mattes/migrate/migrate/direction"
+	"github.com/bylevel/migrate/file"
+	"github.com/bylevel/migrate/migrate/direction"
 	"github.com/mattn/go-sqlite3"
 	"strings"
 )
